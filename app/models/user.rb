@@ -4,4 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   attr_accessor :name, :email, :password
+
+  has_many: shifts
+  belongs_to: organization
 end
