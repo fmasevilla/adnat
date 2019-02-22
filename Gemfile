@@ -45,3 +45,6 @@ end
 
 # authentication
 gem 'devise'
+
+gem 'haml'
+gem "haml-rails"
