@@ -48,3 +48,5 @@ gem 'devise'
 
 gem 'haml'
 gem "haml-rails"
+
+gem 'bootstrap', '~> 4.3.1'

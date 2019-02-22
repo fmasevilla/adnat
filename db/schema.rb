@@ -10,11 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_22_012242) do
+ActiveRecord::Schema.define(version: 2019_02_22_013359) do
 
   create_table "organizations", force: :cascade do |t|
     t.string "name"
     t.float "hourly_rate"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "shifts", force: :cascade do |t|
+    t.integer "user_id"
+    t.datetime "start"
+    t.datetime "end"
+    t.float "breakLength"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
